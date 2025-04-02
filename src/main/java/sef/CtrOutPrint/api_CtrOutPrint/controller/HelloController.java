@@ -10,6 +10,6 @@ public class HelloController {
 
     @GetMapping
     public String hello(){
-        return "Olá Mundo!";
+        return "Olá Mundo! Este é um projeto de API para acesso aos dados do Outsourcing de Impressão da SEF";
     }
 }
