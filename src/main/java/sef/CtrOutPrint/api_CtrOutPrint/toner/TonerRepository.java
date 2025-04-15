@@ -1,4 +1,6 @@
 package sef.CtrOutPrint.api_CtrOutPrint.toner;
 
-public interface TonerRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TonerRepository extends JpaRepository<Toner, Long> {
 }
