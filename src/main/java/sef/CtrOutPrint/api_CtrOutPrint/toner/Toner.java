@@ -21,7 +21,6 @@ public class Toner {
     private String descricao;
     private String nota;
     private LocalDate dataRecebimento;
-
     @Enumerated(EnumType.STRING)
     private TipoToner tipo;
 

@@ -1,6 +1,7 @@
 package sef.CtrOutPrint.api_CtrOutPrint.controller;
 
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,9 +21,9 @@ public class TonerController {
     @PostMapping
     public String cadastrar(@RequestBody DadosToner dados){
 
-        //repository.save(new Toner(dados));  //Acionando o método save para salvar um Objeto Toner
+        repository.save(new Toner(dados));  //Acionando o método save para salvar um Objeto Toner
                                             //Instancia um objeto Toner para encapsular os dados recebidos
-        return "Ok";
+        return "Registro adicionado!";
 
     }
 
