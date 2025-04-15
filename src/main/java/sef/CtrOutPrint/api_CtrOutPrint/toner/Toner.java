@@ -17,6 +17,7 @@ import java.time.LocalDate;
 public class Toner {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String codigo;
     private String descricao;
     private String nota;
